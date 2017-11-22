@@ -1488,6 +1488,12 @@ public class MainActivity extends Activity {
 			TRACE.d("onRequestOnlineProcess");
 			//return transaction online data
 			TRACE.i("return transaction online data:"+tlv);
+
+			//
+            String track2Data = pos.getICCTag(QPOSService.EncryptType.ENCRYPTED, 2, 1, "57").get("tlv");
+
+            TRACE.i("track2data: " + track2Data);
+
 			/*if(isQuickEmv) {如果是quickemv就直接提示客户拔卡
 				statusEditText.setText("please remove card. and send data to online");
             	String customDisplayString = "";
@@ -2099,6 +2105,16 @@ public class MainActivity extends Activity {
 			}else{
 				statusEditText.setText("set the Sleep timee unSuccess");
 			}
+		}
+
+		@Override
+		public void onGetSleepModeTime(String s) {
+			statusEditText.setText("SleepModeTime: " + s);
+		}
+
+		@Override
+		public void onGetShutDownTime(String s) {
+			statusEditText.setText("ShutDownTime: " + s);
 		}
 
 		@Override

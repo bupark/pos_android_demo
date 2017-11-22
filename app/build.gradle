@@ -21,7 +21,7 @@ android {
 dependencies {
     compile 'com.android.support:support-v4:21.0.3'
     compile files('libs/bcprov-ext-jdk15on-154.jar')
-    compile files('libs/dspread_android_sdk_2.7.3.jar')
+    compile files('libs/dspread_android_sdk_2.7.4.jar')
     compile files('libs/injectKey.jar')
     compile files('libs/mpaysdk.jar')
     compile files('libs/sun.misc.BASE64Decoder.jar')

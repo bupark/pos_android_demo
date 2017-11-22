@@ -841,6 +841,16 @@ public class IccActivity extends Activity {
 		}
 
 		@Override
+		public void onGetSleepModeTime(String s) {
+
+		}
+
+		@Override
+		public void onGetShutDownTime(String s) {
+
+		}
+
+		@Override
 		public void onReturnGetEMVListResult(String arg0) {
 			// TODO Auto-generated method stub
 			
